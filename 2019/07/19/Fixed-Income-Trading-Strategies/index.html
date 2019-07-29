@@ -102,7 +102,7 @@
 <meta property="og:site_name" content="Cynthia&#39;s universe">
 <meta property="og:description" content="To be honest, lots of my friends hated fixed income derivatives for unfimiliarity. However, through the talk with practitioners during my superday with Goldman Sachs and CME, I found it has some attra">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-07-19T11:22:31.606Z">
+<meta property="og:updated_time" content="2019-07-29T04:18:47.093Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Fixed Income Trading Strategies">
 <meta name="twitter:description" content="To be honest, lots of my friends hated fixed income derivatives for unfimiliarity. However, through the talk with practitioners during my superday with Goldman Sachs and CME, I found it has some attra">
@@ -361,13 +361,23 @@
                 
               
 
-              <time title="Created: 2019-07-19 15:11:15 / Modified: 19:22:31" itemprop="dateCreated datePublished" datetime="2019-07-19T15:11:15+08:00">2019-07-19</time>
+              <time title="Created: 2019-07-19 15:11:15" itemprop="dateCreated datePublished" datetime="2019-07-19T15:11:15+08:00">2019-07-19</time>
             </span>
           
 
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-07-29 12:18:47" itemprop="dateModified" datetime="2019-07-29T12:18:47+08:00">2019-07-29</time>
+              </span>
             
           
 
@@ -421,8 +431,21 @@
 
       
         <p>To be honest, lots of my friends hated fixed income derivatives for unfimiliarity. However, through the talk with practitioners during my superday with Goldman Sachs and CME, I found it has some attracting attribits. Since I’m doing a relevant summer internship, I decided to take a first step to see what strategies can be used in this kind of asset.</p>
-<h2 id="1-Brief-Introduction-on-Fixed-Income-Derivatives"><a href="#1-Brief-Introduction-on-Fixed-Income-Derivatives" class="headerlink" title="1. Brief Introduction on Fixed Income Derivatives"></a>1. Brief Introduction on Fixed Income Derivatives</h2><h3 id="1-1-Products"><a href="#1-1-Products" class="headerlink" title="1.1 Products"></a>1.1 Products</h3><h3 id="1-2-The-Difference-between"><a href="#1-2-The-Difference-between" class="headerlink" title="1.2 The Difference between"></a>1.2 The Difference between</h3><h2 id="2-Simple-and-common-strategies"><a href="#2-Simple-and-common-strategies" class="headerlink" title="2. Simple and common strategies"></a>2. Simple and common strategies</h2><p>税收利差、基差交易、期限利差交易、IRS-利率债</p>
-<h3 id="2-1-Duration"><a href="#2-1-Duration" class="headerlink" title="2.1 Duration"></a>2.1 Duration</h3><h3 id="2-2"><a href="#2-2" class="headerlink" title="2.2"></a>2.2</h3><h3 id="2-3-Leverage"><a href="#2-3-Leverage" class="headerlink" title="2.3 Leverage"></a>2.3 Leverage</h3><h2 id="3-Related-Coursework"><a href="#3-Related-Coursework" class="headerlink" title="3.  Related Coursework"></a>3.  Related Coursework</h2><p>I’ve taken a fixed income course in the spring semester. Some knowleges included are: PCA, Black’s model, HJM, Hull White.</p>
+<h2 id="1-Brief-Introduction-on-Fixed-Income-Derivatives"><a href="#1-Brief-Introduction-on-Fixed-Income-Derivatives" class="headerlink" title="1. Brief Introduction on Fixed Income Derivatives"></a>1. Brief Introduction on Fixed Income Derivatives</h2><h3 id="1-1-Products"><a href="#1-1-Products" class="headerlink" title="1.1 Products"></a>1.1 Products</h3><h3 id="1-2-The-Difference-between-China-and-US-market"><a href="#1-2-The-Difference-between-China-and-US-market" class="headerlink" title="1.2 The Difference between China and US market"></a>1.2 The Difference between China and US market</h3><p>Most ideas below are my summary after learning fro Internet research. </p>
+<h2 id="2-Simple-and-common-strategies"><a href="#2-Simple-and-common-strategies" class="headerlink" title="2. Simple and common strategies"></a>2. Simple and common strategies</h2><p>税收利差、基差交易、期限利差交易、IRS-利率债</p>
+<h3 id="2-1-Alternative-risk-premia"><a href="#2-1-Alternative-risk-premia" class="headerlink" title="2.1 Alternative risk premia"></a>2.1 Alternative risk premia</h3><p>Also called “smart beta”. space has gained a lot of tractions over the past few years. These are rule-based strategies that provide systematic exposures to risk factors that have historically generated positive excess returns. Some of the best-known factors are, of course, trend, value, carry, etc. These strategies are well-documented.</p>
+<h3 id="2-2-Relative-value-strategies"><a href="#2-2-Relative-value-strategies" class="headerlink" title="2.2 Relative value strategies"></a>2.2 Relative value strategies</h3><p>I’m inclined to think the books you referenced are sufficient – the ingredients are there and just need to be applied in a systematic fashion. Consider a curve fitting exercise (covered in the first book you cited). You can feasibly construct a portfolio that’s long the cheapest bonds based on the model and short the most expensive bonds (after accounting for liquidity, funding, etc. and making sure that the portfolio is market neutral) and see how the strategy behaves over time. But off the top of my head, I remember Citi’s primer for their fitted curve model performing just such a backtest.<br>A good reference is Bruce Tuckman’s Fixed Income Securities, which introduces more sophisticated models that are actually used in the real life in its 3rd edition (although a full backtest was not conducted in the book). Quantitative Analysis, Derivatives Modeling, and Trading Strategies is not a very widely known book, but has a lot of hidden gems in it.</p>
+<p>I’ve been reading a couple of books (such as Fixed Income Relative Value Analysis: A Practitioners Guide to the Theory, Tools, and Trades or Trading the Fixed Income, Inflation and Credit Markets: A Relative Value Guide) but I am far from finding any source that explains or give examples of what kind of systematic strategies can be implemented in Rates.</p>
+<p>//<br>Relative value analysis models can be divided into two categories: statistical and financial.<br>//<br>Common examples of Relative Value strategies include placing relative bets (i.e., buying one asset and selling another) on assets whose prices are closely linked:</p>
+<p>Government securities of two different countries<br>Government securities of two different lengths to maturity<br>Corporate vs. mortgage bond securities<br>The differential in implied volatility between two derivatives<br>Equity prices vs. bond prices for a corporate bond issuer<br>Corporate bond yield spreads vs. Credit Default Swap (CDS) spreads<br>The list of potential Relative Value strategies is very long; above are just a few examples. There are three very important and commonly used Relative Value strategies to be aware of, however:</p>
+<p>Statistical Arbitrage: trading a mean-reverting trend of the values of similar baskets of assets based on historical trading relationships. One common form of Statistical Arbitrage, or “Stat Arb,” trading, is known as Equity Market Neutral trading. In this strategy, two baskets of equities are chosen (one “long” basket and one “short” basket), with the goal that the relative weights of the two baskets leave the fund with zero net exposure to various risk factors (industry, geography, sector, etc.) Stat Arb also could involve the trading of an index against a similarly matched ETF, or an index versus a single company’s stock.<br>Convertible Arbitrage: purchasing of convertible bonds issues by a company and simultaneously selling the same company’s common stock, with the idea being that should the stock of a given company decline, the profit from the short position will more than offset any loss on the convertible bond position, given the convertible bond’s value as a fixed-income instrument.  Similarly, in any upward price move of the common stock, the fund can profit from the conversion of its convertible bonds into stock, selling that stock at market value by an amount that exceeds any losses on its short position.<br>Fixed Income Arbitrage: trading fixed income securities in developed bond markets to exploit perceived relative interest rate anomalies. Fixed Income Arbitrage positions can use government bonds, interest rate swaps, and interest rate futures.  One popular example of this style of trading in fixed income arbitrage is the “basis trade,” in which one sells (buys) Treasury futures, and buys (sells) a corresponding amount of the potential deliverable bond.   Here, one is taking a view on the difference between the spot price of a bond and the adjusted future’s contract price (futures price × conversion factor) and trading the pairs of assets accordingly.<br>//<br><strong>Companies who use: Citadel</strong></p>
+<h3 id="2-3-Directional-Strategies"><a href="#2-3-Directional-Strategies" class="headerlink" title="2.3 Directional Strategies"></a>2.3 Directional Strategies</h3><p>(Mostly) fundamentals-based systematic strats have a long history. I usually reference Ilmanen’s Forecasting U.S. Bond Returns. It is decidedly old-school, but it’s also simple, intuitive, and very educational. You shouldn’t expect it to work out of the box, but it’s a surprisingly useful starting point.<br>Technical-based systematic strats are also prevalent. One piece does come to mind, which is “Predicting Near-Term Performance of the US Treasury Market Using Neural Networks,” published by Salomon back in 2001. It introduced a systematic, technical-based directional strat that used machine learning techniques at an era when most people had never heard of ML; it was also live traded.</p>
+<h3 id="2-4-Other-Strategies"><a href="#2-4-Other-Strategies" class="headerlink" title="2.4 Other Strategies"></a>2.4 Other Strategies</h3><p>Other quantitative trading approaches that are not easily categorized as either Relative Value strategies or Directional strategies include:</p>
+<p>High-Frequency Trading, where traders attempt to take advantage of pricing discrepancies among multiple platforms with many trades throughout the day<br>Managed Volatility strategies use futures and forward contracts to focus on generating low, but stable, LIBOR-plus absolute returns, increasing or decreasing the number of contracts dynamically as the underlying volatilities of the stock, bond and other markets shift.  Managed Volatility Strategies have gained in popularity in recent years due to the recent instability of both stock and bond markets.</p>
+<h2 id="3-Related-Coursework"><a href="#3-Related-Coursework" class="headerlink" title="3.  Related Coursework"></a>3.  Related Coursework</h2><p>I’ve taken a fixed income course in the spring semester. Some knowleges included are: PCA, Black’s model, HJM, Hull White.</p>
+<p><strong>Mean reverting</strong><br>dxt = k(μ−xt)dt + σdWt is the SDE for an Ornstein–Uhlenbeck (OU) process<br>The speed of mean reversion is given by the parameter k and the long-run mean of the variable is given by μ. The instantaneous volatility of the variable is given by σ, and the term dWt is the change in the value of Wt over the instantaneous time interval dt.<br>For example, in the case of the OU process, the transition density of xt+τ for τ &gt; 0 is a normal density with mean given by μ + (xt − μ)e−kτ and with a variance given by. So in the case of the OU process, the unconditional density is a normal density with mean given by μ and with variance given by</p>
+<p>However, in many cases the limit of the conditional density will exist, and the random variable is said to be mean reverting. We also say that stationary density exists and that the process is stationary.</p>
+<p>To our knowledge, the most useful diagnostic is one suggested by Richard Stanton in a Stanford research paper in the mid-1990s. The basic idea behind this diagnostic tool is to create a nonparametric, empirical approximation of the drift coefficient using historical data.<br><strong>PCA</strong></p>
 
       
     </div>
@@ -456,10 +479,6 @@
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
-            
-              <a href="/2019/07/14/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
-              </a>
             
           </div>
 
@@ -542,7 +561,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -612,7 +631,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Brief-Introduction-on-Fixed-Income-Derivatives"><span class="nav-number">1.</span> <span class="nav-text">1. Brief Introduction on Fixed Income Derivatives</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-Products"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 Products</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-The-Difference-between"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 The Difference between</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Simple-and-common-strategies"><span class="nav-number">2.</span> <span class="nav-text">2. Simple and common strategies</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-Duration"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 Duration</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2"><span class="nav-number">2.2.</span> <span class="nav-text">2.2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-Leverage"><span class="nav-number">2.3.</span> <span class="nav-text">2.3 Leverage</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Related-Coursework"><span class="nav-number">3.</span> <span class="nav-text">3.  Related Coursework</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Brief-Introduction-on-Fixed-Income-Derivatives"><span class="nav-number">1.</span> <span class="nav-text">1. Brief Introduction on Fixed Income Derivatives</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-Products"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 Products</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-The-Difference-between-China-and-US-market"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 The Difference between China and US market</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Simple-and-common-strategies"><span class="nav-number">2.</span> <span class="nav-text">2. Simple and common strategies</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-Alternative-risk-premia"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 Alternative risk premia</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-Relative-value-strategies"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 Relative value strategies</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-Directional-Strategies"><span class="nav-number">2.3.</span> <span class="nav-text">2.3 Directional Strategies</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-Other-Strategies"><span class="nav-number">2.4.</span> <span class="nav-text">2.4 Other Strategies</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Related-Coursework"><span class="nav-number">3.</span> <span class="nav-text">3.  Related Coursework</span></a></li></ol></div>
             
 
           </div>
